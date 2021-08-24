@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden; 
+}
+#laravel{
+    display:flex;
+}
+nav ul{
+  position:absolute;
+  right:0;
+}
+
+
+
+.container-fluid {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+#home .card-deck {
+  width: 100%;
+  min-height: 80vh;
+}
+#home .card-deck .card {
+  width: 100%;
+  height: 100%;
+}
+
+#home .card-deck .card .card-img-top {
+  height: 510px;
+}
+#home .card-deck .card::before {
+  content: "";
+  position: absolute;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  z-index: 10;
+  left: 50%;
+  top: 84%;
+  transform: translate(-50%, -84%);
+  background-image: url(./home-lg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#home .card-deck .card .card-title {
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.owl-carousel{
+    height:200px;
+}
+
+#location .card{
+    height:300px;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  left:50%;
+  transform:translate(-50%);
+}
+.inner-owl-carousel{
+    height:200px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:xx-large;
+    font-weight:600;
+    margin-right:10px;
+    background-color:rgb(207, 199, 199);
+}
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next{
+    background-position:center !important;
+    font-size:60px;
+    position: absolute;
+    font-weight:bolder;
+    color:rgb(238, 240, 236);
+    margin-top:-21%;
+    transform:translateY(21%);
+}
+.owl-carousel .owl-nav button.owl-prev{
+ 
+    left:0;
+   
+}
+
+.owl-carousel .owl-nav button.owl-next{
+   
+   
+    right:5px;
+}
+@media screen and (max-width:600px){
+    nav ul{
+        position:relative;
+        /* right:0; */
+      }
+}
+
+@media screen and (max-width:500px){
+
+    #home .card-deck{
+        min-height:50vh;
+    }
+    #home .card-deck .card .card-img-top {
+        height: 210px;
+      }
+      #home .card-deck .card::before{
+         
+          left:50%;
+          top:69%;
+          transform:translatex(-69%,-69%);
+          height:100px;
+          width:100px;
+
+      }
+    .table-wrapper{
+        width:100%;
+        overflow-x:scroll;
+    }
+    .table-wrapper .table{
+        width:1000px;
+    }
+    
+
+      .owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next{
+    
+    margin-top:-175px;
+    /* transform:translateY(00px); */
+}
+}
