@@ -14,6 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/2.0.0/css/imagehover.min.css" integrity="sha512-SYBBAnJsPEzSQ/kBqkR/9krJ+EUgF624c8uaMBww1Q26pnCw5k7zVmtc48BfXjZ9MRNNBveIdhx/na1xRLWgjw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
 <link rel="stylesheet" href="./owl.carousel.min.css">
 <link rel="stylesheet" href="./owl.theme.default.min.css">
@@ -50,38 +51,36 @@
         <div class="col-lg-9 mx-auto">
           <div class="card-deck mx-auto">
             <div class="card">
-              <img
-                class="card-img-top"
-                src="./home-lg.jpg"
-                alt="unicorn shops"
-              />
-              <div class="card-body">
-                <h4 class="card-title text-center mt-5">UniCorn Fruits</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            
 
-      <div class="row mx-auto mt-4">
-        <div class="col-lg-9 mx-auto">
-          <div class="card-deck mx-auto">
-            <div class="card">
-              <div class="card-header">Farmer images</div>
+             
               <div class="card-body">
-                <div class="owl-carousel">
-                    <div class = "inner-owl-carousel">1</div>
-                    <div class = "inner-owl-carousel">2</div>
-                    <div class = "inner-owl-carousel">3</div>
-                    <div class = "inner-owl-carousel">4</div>
-                
+                <div id="carouselId" class="carousel slide" data-ride="carousel">
+               
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                      <img src = "home-lg.jpg" data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img src = "home-lg.jpg" data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img src = "home-lg.jpg" data-src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Third slide">
+                    </div>
+                  </div>
+                 
                 </div>
+                <div class="farmerProfilePic">
+                  <img src="./home-lg.jpg" class = "img-fluid img-responsive rounded-circle" alt="farmer">
+                </div>
+                <h4 class="card-title text-center mt-3">UniCorn Fruits</h4>
               </div>
             </div>
           </div>
         </div>
       </div>
 
+     
       <div class="row mx-auto mt-4">
         <div class="col-lg-9 mx-auto">
           <div class="card-deck mx-auto">
@@ -89,9 +88,27 @@
               <div class="card-header text-center">Description</div>
               <div class="card-body text-center">
                 <p class="card-text">
-                  With supporting text below as a natural lead-in additional
-                  content
+                  
                 </p>
+
+                 
+
+
+                  <figure class="text-center bg-white py-1 px-1 shadow-2" style="border-radius: .75rem;">
+                    <i class="far fa-gem fa-lg mb-4 text-success" ></i>
+                    <blockquote class="blockquote pb-2">
+                      <p>
+                        <i class="fas fa-angle-double-left text-success" ></i>
+                        <span class="font-italic">With supporting text below as a natural lead-in additional
+                          content</span>
+                        <i class="fas fa-angle-double-right text-success" ></i>
+                      </p>
+                    </blockquote>
+                    
+                  </figure>
+
+                  <hr class = "w-100 bg-success">
+                 
 
                 <p class="card-text">
                   Lorem Ipsum is simply dummy text of the printing and
@@ -105,6 +122,8 @@
                   passages, and more recently with desktop publishing software
                   like Aldus PageMaker including versions of Lorem Ipsum.
                 </p>
+
+          
               </div>
             </div>
           </div>
@@ -182,6 +201,39 @@
           </div>
         </div>
       </div>
+
+      <div class="row mx-auto mt-4">
+        <div class="col-lg-9 mx-auto">
+          <div class="card-deck mx-auto">
+            <div class="card">
+              <div class="card-header">Farmer images</div>
+              <div class="card-body">
+                <div class="owl-carousel">
+                    <div class = "inner-owl-carousel p-1">
+
+
+                      <div class="video-desc mt-4">
+
+                        <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/B4zLLuFZ_MY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+                        </div>
+      
+                      </div>
+
+                    </div>
+                    <div class = "inner-owl-carousel">2</div>
+                    <div class = "inner-owl-carousel">3</div>
+                    <div class = "inner-owl-carousel">4</div>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
       <div class="row mx-auto mt-4">
         <div class="col-lg-9 mx-auto">
           <div class="card-deck mx-auto">

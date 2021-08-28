@@ -40,27 +40,41 @@ nav ul{
   height: 100%;
 }
 
+#home .card #carouselId{
+  width: 100%;
+  min-height: 80vh;
+}
+#home .card #carouselId img{
+  display:block;
+  height:80vh;
+  width:100%;
+}
+
+
 #home .card-deck .card .card-img-top {
   height: 510px;
 }
-#home .card-deck .card::before {
-  content: "";
-  position: absolute;
+
+
+#home .farmerProfilePic{
+
   width: 115px;
   height: 115px;
   border-radius: 50%;
-  z-index: 10;
-  left: 50%;
-  top: 84%;
-  transform: translate(-50%, -84%);
-  background-image: url(./home-lg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color:red;
+  margin:0 auto;
+  margin-top:-57.5px;
+}
+
+#home .farmerProfilePic img{
+  display:block;
+ height:100%;
+ width:100%;
 }
 #home .card-deck .card .card-title {
   font-size: xx-large;
   font-weight: 600;
+  margin-top:60px;
 }
 
 .owl-carousel{
@@ -80,23 +94,25 @@ nav ul{
 }
 .inner-owl-carousel{
     height:200px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:xx-large;
-    font-weight:600;
     margin-right:10px;
-    background-color:rgb(207, 199, 199);
+    object-fit: cover;
+    background-color:#000;
 }
+
+
+.inner-owl-carousel .video-desc{
+  height:100%;
+  width:100%;
+}
+
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next{
     background-position:center !important;
     font-size:60px;
-    position: absolute;
     font-weight:bolder;
-    color:rgb(238, 240, 236);
-    margin-top:-21%;
-    transform:translateY(21%);
+    color:rgb(60, 247, 60);
+    position:absolute;
+    margin-top:-150px;
 }
 .owl-carousel .owl-nav button.owl-prev{
  
@@ -109,6 +125,10 @@ nav ul{
    
     right:5px;
 }
+
+
+
+
 @media screen and (max-width:600px){
     nav ul{
         position:relative;
