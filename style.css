@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,7 @@
 
 html,
 body {
+  font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -42,19 +45,24 @@ nav ul{
 
 #home .card #carouselId{
   width: 100%;
-  min-height: 80vh;
+  min-height: 60vh;
 }
 #home .card #carouselId img{
   display:block;
-  height:80vh;
+  height:60vh;
   width:100%;
 }
-
-
-#home .card-deck .card .card-img-top {
-  height: 510px;
+.card-header{
+  font-size:22px;
+  font-weight:500px;
+}
+.row{
+  margin-bottom:40px;
 }
 
+blockquote .desc{
+  font-size:17px;
+}
 
 #home .farmerProfilePic{
 
@@ -118,6 +126,26 @@ nav ul{
  
     left:0;
    
+}
+
+.card{
+  background-color:transparent;
+}
+
+
+
+
+.section-1{
+  background-size:cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  background:url(https://images.unsplash.com/photo-1595009901108-41259ec1b3f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+}
+.section-2{
+  background:url(https://images.unsplash.com/photo-1567106913018-db776ba7c595?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+}
+.section-3{
+  background:url(https://images.unsplash.com/photo-1609692029268-f9ba9b2a728b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80);
 }
 
 .owl-carousel .owl-nav button.owl-next{
