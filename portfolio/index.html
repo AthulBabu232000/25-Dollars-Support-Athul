@@ -28,10 +28,10 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin=""/>
+   
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+
+ 
     <link rel="stylesheet" href="./owl.carousel.min.css" />
     <link rel="stylesheet" href="./owl.theme.default.min.css" />
     <link rel="stylesheet" href="style.css" />
@@ -40,7 +40,7 @@
   <body>
     <div class="container-fluid">
       <nav
-        class="navbar navbar-expand-sm navbar-light bg-light shadow-sm"
+        class="navbar navbar-fixed navbar-expand-sm navbar-light bg-light shadow-sm"
         id="laravel"
       >
         <a class="navbar-brand px-3" href="#">Laravel</a>
@@ -138,7 +138,7 @@
                   style="border-radius: 0.75rem"
                 >
                   <i class="far fa-gem fa-lg mb-4 text-success"></i>
-                  <blockquote class="blockquote">
+                  <!-- <blockquote class="blockquote">
                     <p>
                       <i class="fas fa-angle-double-left text-success"></i>
                       <span class="font-italic"
@@ -147,17 +147,14 @@
                       >
                       <i class="fas fa-angle-double-right text-success"></i>
                     </p>
-                  </blockquote>
+                  </blockquote> -->
                 </figure>
 
                 <hr class="w-100 bg-success" />
 
                 <blockquote>
                   <p class="card-text desc mt-4">
-                    <i
-                      class="fa fa-quote-left text-success lead mx-2"
-                      aria-hidden="true"
-                    ></i>
+                
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s, when an unknown
@@ -169,10 +166,7 @@
                     passages, and more recently with desktop publishing software
                     like Aldus PageMaker including versions of Lorem Ipsum.
 
-                    <i
-                      class="fa fa-quote-right text-success mx-2"
-                      aria-hidden="true"
-                    ></i>
+                   
                   </p>
                 </blockquote>
               </div>
@@ -330,17 +324,16 @@
                   </div>
                   <div class="swiper-slide">repeat the next table contents here</div>
                 </div>
-                <div class="swiper-button-next text-success"></div>
-                <div class="swiper-button-prev text-success"></div>
-                <div class="swiper-pagination mt-5"></div>
+          
+                <div class="swiper-pagination mt-5 text-success"></div>
                 
               </div>
 
               
-
+<!-- 
               <div class="card-footer text-capitalize text-center">
                 minimum order value: <span></span>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -399,7 +392,7 @@
                   style="border-radius: 0.75rem"
                 >
                   <i class="far fa-gem fa-lg mb-4 text-success"></i>
-                  <blockquote class="blockquote">
+                  <!-- <blockquote class="blockquote">
                     <p>
                       <i class="fas fa-angle-double-left text-success"></i>
                       <span class="font-italic"
@@ -408,7 +401,7 @@
                       >
                       <i class="fas fa-angle-double-right text-success"></i>
                     </p>
-                  </blockquote>
+                  </blockquote> -->
                 </figure>
                 </p>
 
@@ -416,10 +409,7 @@
 
                 <blockquote>
                   <p class="card-text desc mt-4">
-                    <i
-                      class="fa fa-quote-left text-success lead mx-2"
-                      aria-hidden="true"
-                    ></i>
+                  
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s, when an unknown
@@ -431,10 +421,6 @@
                     passages, and more recently with desktop publishing software
                     like Aldus PageMaker including versions of Lorem Ipsum.
 
-                    <i
-                      class="fa fa-quote-right text-success mx-2"
-                      aria-hidden="true"
-                    ></i>
                   </p>
                 </blockquote>
  
@@ -539,28 +525,29 @@
   var swiperTable = new Swiper(".myTable", {
     pagination: {
       el: ".swiper-pagination",
-      type: "fraction",
+      clickable:true,
     },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+  
   });
 </script>
 
-   
-     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-     <script>
-      mapboxgl.accessToken =
-        "pk.eyJ1IjoiYXNidXBzaWxvbiIsImEiOiJja3Nwb3Q2aWgwNHk5MnFvNHV4YjdtdGF1In0.yJT3HZdU4jpTiIwcfGCW6g";
-      const map = new mapboxgl.Map({
-        container: "map", // container ID
-        style: "mapbox://styles/mapbox/outdoors-v11", // style URL
-        center: [11.255, 43.77], // starting position
-        zoom: 13, // starting zoom
-      });
-
-      map.addControl(new mapboxgl.FullscreenControl());
-    </script>
+   <script>
+     $(function(){
+	var navbar = $('.navbar');
+	
+	$(window).scroll(function(){
+		if($(window).scrollTop() <= 40){
+			navbar.removeClass('navbar-scroll');
+      console.log(document.getElementsByClassName('navbar')[0])
+document.getElementsByClassName('navbar')[0].setAttribute("id", "laravel")
+		} else {
+      $('nav#laravel').removeAttr('id');
+			navbar.addClass('navbar-scroll');
+		}
+	});
+});
+   </script>
+    
+    <script src="./map.js"></script>
   </body>
 </html>

@@ -1,1 +1,0 @@
- const mapapi = "pk.eyJ1IjoiYXNidXBzaWxvbiIsImEiOiJja3Nwb3Q2aWgwNHk5MnFvNHV4YjdtdGF1In0.yJT3HZdU4jpTiIwcfGCW6g";

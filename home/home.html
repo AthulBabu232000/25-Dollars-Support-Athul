@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+
+
+
+    <link rel="stylesheet" href="home.css" />
+
+    <title>home</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <nav
+        class="navbar navbar-expand-sm navbar-light bg-light"
+        id="navigation"
+      >
+        <a class="navbar-brand" href="#">Farmer</a>
+
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0 me-auto bg-success w-100">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <form class="form-inline my-2 my-lg-0" id="search-product">
+                  <input
+                    class="form-control mr-sm-2"
+                    type="text"
+                    placeholder="Search"
+                  />
+                  <button
+                    class="btn btn-outline-success my-2 my-sm-0"
+                    type="submit"
+                  >
+                    <i class="fas fa-search"></i>
+                  </button>
+                </form>
+              </a>
+            </li>
+            <li class="nav-item" id="myAccount">
+              <a class="nav-link" href="#"
+                >My Account <br /><span>SignIn</span>/<span>Register</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fas fa-cart-plus"><span>0</span></i
+                ><span>Cart</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section id="row" class = "row mx-auto">
+        <div class="inner-container col-lg-2 mx-auto bg-primary">
+          <div class="inner-container-wrapper">
+            <ul>
+              <li>Best Farmers</li>
+              <li>High Value Products</li>
+              <li>Customers choice</li>
+              <li>Award winners</li>
+              <li>Best Farmers</li>
+              <li>High Value Products</li>
+              <li>Customers choice</li>
+              <li>Award winners</li>
+              <li>Best Farmers</li>
+              <li>High Value Products</li>
+              <li>Customers choice</li>
+              <li>Award winners</li>
+              <li>Best Farmers</li>
+              <li>High Value Products</li>
+              <li>Customers choice</li>
+              <li>Award winners</li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-container-row col-lg-10 mx-auto bg-success">
+           <div class="row mx-auto">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide">Slide 6</div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div>
+                </div>
+              </div>
+           </div>
+
+           <div class="row mx-auto">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide">Slide 6</div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div>
+                </div>
+              </div>
+           </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          watchSlidesProgress: true,
+          slidesPerView: 3,
+        });
+      </script>
+  </body>
+</html>
