@@ -28,6 +28,9 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
     <link rel="stylesheet" href="./owl.carousel.min.css" />
     <link rel="stylesheet" href="./owl.theme.default.min.css" />
@@ -348,7 +351,7 @@
           <div class="card-deck mx-auto">
             <div class="card">
               <div class="card-header bg-success text-light text-center">
-                Farmer images
+                Farmer Videos
               </div>
               <div class="card-body">
                 <div class="owl-carousel">
@@ -545,7 +548,9 @@
   });
 </script>
 
-    <script>
+   
+     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+     <script>
       mapboxgl.accessToken =
         "pk.eyJ1IjoiYXNidXBzaWxvbiIsImEiOiJja3Nwb3Q2aWgwNHk5MnFvNHV4YjdtdGF1In0.yJT3HZdU4jpTiIwcfGCW6g";
       const map = new mapboxgl.Map({
