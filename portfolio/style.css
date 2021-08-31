@@ -56,15 +56,16 @@ nav ul {
 #home .card-deck .card {
   width: 100%;
   height: 100%;
+  border:1px solid var(--success);
 }
 
 #home .card #carouselId {
   width: 100%;
-  min-height: 70vh;
+  min-height: 80vh;
 }
 #home .card #carouselId img {
   display: block;
-  height: 70vh;
+  height: 80vh;
   width: 100%;
 }
 .card-header {
@@ -99,9 +100,6 @@ blockquote .desc {
   margin-top: 60px;
 }
 
-.owl-carousel {
-  height: 200px;
-}
 
 .select-category {
   height: 100%;
@@ -136,31 +134,6 @@ blockquote .desc {
   left: 50%;
   transform: translate(-50%);
 }
-.inner-owl-carousel {
-  height: 200px;
-  margin-right: 10px;
-  object-fit: cover;
-  background-color: #000;
-}
-
-.inner-owl-carousel .video-desc {
-  height: 100%;
-  width: 100%;
-}
-
-.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel .owl-nav button.owl-next {
-  background-position: center !important;
-  font-size: 60px;
-  font-weight: bolder;
-  color: var(--success);
-  position: absolute;
-  margin-top: -150px;
-}
-.owl-carousel .owl-nav button.owl-prev {
-  left: 0;
-}
-
 .mySwiper {
   display: flex;
   justify-content: space-around;
@@ -175,27 +148,23 @@ blockquote .desc {
 .button-wrapper {
   display: flex;
   justify-content: space-around;
+  align-items:center;
 }
 
-.category-display {
-  text-align: center;
-  display: grid;
-  place-items: center;
-  user-select: none;
-  text-transform: capitalize;
-  color: #fff;
-  background-color: var(--success);
-  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+.category-display-pre, .category-display-nxt{
+  color:var(--success);
 }
-.category-display-pre {
-  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+.category-display{
+  font-size:40px;
+  /* background-color:red; */
 }
+
 .swiper {
   width: 100%;
   height: 100%;
 }
 
-.swiper-slide .btn {
+.button-filter .swiper-slide .btn {
   min-width: 100px;
 }
 
@@ -207,6 +176,238 @@ blockquote .desc {
   margin-bottom: -15px;
 }
 
+.add-to-list{
+  display:grid;
+  grid-template-columns: 30px 50px 30px;
+  justify-content:center;
+  align-items:center;
+}
+.overlay-add-btn{
+  position:absolute;
+  width:120px;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:10;
+  display:inline-block;
+}
+.add-to {
+  position: absolute;
+  
+  width: 100%;
+  z-index: 10;
+  /* display: none; */
+}
+
+.btn:focus{
+
+  outline:none !important;
+}
+#home #carouselId{
+  overflow: hidden;
+}
+
+
+
+
+.fa, .fas{
+  padding: 15px;
+  font-size: 20px;
+    text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius:50%;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  padding-left:20px;
+  padding-right:20px;
+}
+.fa:hover, .fas:hover {
+  color:white;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.fa-phone{
+  background: #125688;
+  color: white;
+}
+.fa-mail-bulk{
+  background: #bb0000;
+  color: white;
+}
+
+.swiper-video{
+  height:300px;
+}
+.swiper-video .swiper-slide{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border:5px solid var(--success);
+  background-color:#000;
+  padding:0px 10px;
+}
+
+/* the beginning */
+
+.swiper-review{
+  height:310px;
+  display:flex;
+  padding:5px;
+  
+}
+.swiper-review .swiper-slide{
+  border:2px solid var(--success);
+  padding:5px;
+  width:280px !important;
+
+}
+
+.swiper-review .swiper-slide .card{
+  width:100%;
+  margin:0 auto;
+  height:100%;
+
+}
+
+/* the end */
+
+
+* {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+*:before, *:after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.clearfix {
+  clear:both;
+}
+
+.text-center {text-align:center;}
+
+a {
+  color: tomato;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2196f3;
+}
+
+pre {
+display: block;
+padding: 9.5px;
+margin: 0 0 10px;
+font-size: 13px;
+line-height: 1.42857143;
+color: #333;
+word-break: break-all;
+word-wrap: break-word;
+background-color: #F5F5F5;
+border: 1px solid #CCC;
+border-radius: 4px;
+}
+
+
+
+
+
+/* Rating Star Widgets Style */
+.rating-stars ul {
+  list-style-type:none;
+  padding:0;
+  
+  -moz-user-select:none;
+  -webkit-user-select:none;
+}
+.rating-stars ul > li.star {
+  display:inline-block;
+  
+}
+
+/* Idle State of the stars */
+.rating-stars ul > li.star > i.fa {
+  font-size:2.5em; /* Change the size of the stars */
+  color:#ccc; /* Color on idle state */
+}
+
+/* Hover state of the stars */
+.rating-stars ul > li.star.hover > i.fa {
+  color:#FFCC36;
+}
+
+/* Selected state of the stars */
+.rating-stars ul > li.star.selected > i.fa {
+  color:#FF912C;
+}
+.rating-widget{
+  width:200px;
+  padding:0;
+  margin:0 auto;
+  background:black;
+  height:0px;
+}
+
+.rating-stars{
+  margin:0 auto;
+  width:220%;
+  transform: scale(0.3);
+  margin-left:-120px;
+  margin-top:-20px;
+
+}
+.swiper-review .swiper-slide .card .card-body{
+display:grid;
+grid-template-rows:auto auto;
+}
+
+.swiper-review .swiper-slide .card{
+  padding:2px;
+}
+.review-content{
+  font-size:12px;
+  margin-top:30px;
+  /* background:var(--success); */
+  /* color:#fff; */
+  border-radius:5px;
+}
+.review-author{
+  font-size:10px;
+  color:#CCC;
+}
+.review-pic{
+  height:100px;
+  width:100px;
+}
+
+.review-comment-rating{
+  /* background-color: red; */
+  display:flex;
+  justify-content:flex-start;
+}
+.review-comment-rating .rating-widget{
+  height:80px;
+  background-color:transparent;
+  margin-left:50px;
+  margin-top:-60px;
+}
+
+.review-comment-rating .rating-stars{
+  /* background:green; */
+  position:relative;
+  transform:scale(0.5);
+
+ 
+}
 @media screen and (max-width: 600px) {
   nav ul {
     position: relative;
@@ -218,11 +419,11 @@ blockquote .desc {
 
   #home .card #carouselId {
     width: 100%;
-    min-height: 50vh;
+    min-height: 40vh;
   }
   #home .card #carouselId img {
     display: block;
-    height: 50vh;
+    height: 40vh;
     width: 100%;
   }
  
@@ -233,6 +434,11 @@ blockquote .desc {
   .table-wrapper .table {
     width: 1000px;
   }
-
+  .carousel-control-prev{
+    margin-left:0%;
+   }
+   .carousel-control-next{
+     margin-right:0%;
+   }
  
 }
