@@ -247,6 +247,7 @@ blockquote .desc {
 
 .swiper-video{
   height:250px;
+  user-select: none;
 }
 .swiper-video .swiper-slide{
   display:flex;
@@ -257,7 +258,11 @@ blockquote .desc {
   padding:0px 10px;
   border-radius:8px;
 }
+.farmer-video-controls .fa:hover{
 
+  color:var(--success);
+  user-select:none;
+}
 /* the beginning */
 
 .swiper-review{

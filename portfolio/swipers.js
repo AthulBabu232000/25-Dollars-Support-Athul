@@ -26,7 +26,11 @@
             slidesPerView: 3,
             spaceBetween: 30,
           },
-      }
+      },
+      navigation: {
+        nextEl: ".video-ctrl-nxt",
+        prevEl: ".video-ctrl-pre",
+      },
       });
     
   
@@ -78,6 +82,7 @@
         spaceBetween: 30,
         freeMode: true,
         centeredSlides:true,
+        autoplay:true,
         breakpoints: {
           350: {
             slidesPerView: 1,
