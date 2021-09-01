@@ -151,6 +151,14 @@ blockquote .desc {
   align-items:center;
 }
 
+.button-wrapper .fa{
+  transform: scale(1.2);
+}
+
+.button-wrapper .fa:hover{
+  color:var(--success);
+}
+
 .category-display-pre, .category-display-nxt{
   color:var(--success);
 }
@@ -169,9 +177,7 @@ blockquote .desc {
 }
 
 
-.owl-carousel .owl-nav button.owl-next {
-  right: 5px;
-}
+
 #product-card .swiper-pagination {
   margin-bottom: -15px;
 }
@@ -240,15 +246,16 @@ blockquote .desc {
 }
 
 .swiper-video{
-  height:300px;
+  height:250px;
 }
 .swiper-video .swiper-slide{
   display:flex;
   justify-content:center;
   align-items:center;
-  border:5px solid var(--success);
+  border:1px solid var(--success);
   background-color:#000;
   padding:0px 10px;
+  border-radius:8px;
 }
 
 /* the beginning */

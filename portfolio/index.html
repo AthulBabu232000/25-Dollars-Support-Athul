@@ -242,7 +242,7 @@
                           <th class="text-center">#</th>
                           <th class="text-center">Product Name</th>
 
-                          <th class="text-center">Price</th>
+                          <th class="text-center">Price(₹)</th>
                           <th class="text-center">Min/Qy</th>
                           <th class="text-center">Notes</th>
                           <th class="text-center">Action</th>
@@ -252,11 +252,11 @@
                         <tr>
                           <td class="text-center" scope="row">1</td>
                           <td class="text-center">Orange</td>
-                          <td class="text-center">₹150/Kg</td>
-                          <td class="text-center">10Kg</td>
+                          <td class="text-center amount">150/Kg</td>
+                          <td class="text-center min">10Kg</td>
                           <td class="text-center">From Sikkim</td>
                           <td class="">
-                            <button class="btn btn-success overlay-add-btn text-capitalize" >Add to list</button>
+                            <button class="btn btn-success overlay-add-btn text-capitalize"onclick = "vanish(this)" >Add to list</button>
                             <div class="input-group add-to-list">
                               <div class="input-group-prepend">
                                 <button class="btn btn-outline-secondary" type="button"
@@ -275,8 +275,8 @@
                         <tr>
                           <td class="text-center" scope="row">2</td>
                           <td class="text-center">Kiwi</td>
-                          <td class="text-center">₹600/Kg</td>
-                          <td class="text-center">10Kg</td>
+                          <td class="text-center amount">600/Kg</td>
+                          <td class="text-center min">10Kg</td>
                           <td class="text-center">From Sikkim</td>
                           <td class="text-center">
                             <button class="btn btn-success overlay-add-btn text-capitalize" onclick = "vanish(this)">Add to list</button>
@@ -286,8 +286,8 @@
                                 <button class="btn btn-outline-secondary" type="button"
                                   onclick="decrement(this)">-</button>
                               </div>
-                              <input type="text" class="form-control counter-content w-100 text-center" disabled value="0" placeholder=""
-                                aria-label="" aria-describedby="basic-addon1" />
+                              <input type="text" class="form-control counter-content w-100 text-center"  value="0" placeholder=""
+                                aria-label="" aria-describedby="basic-addon1" disabled />
 
                               <div class="input-group-append">
                                 <button class="btn btn-outline-secondary" type="button"
@@ -299,11 +299,11 @@
                         <tr>
                           <td class="text-center" scope="row">3</td>
                           <td class="text-center">Grapes</td>
-                          <td class="text-center">₹200/Kg</td>
-                          <td class="text-center">10Kg</td>
+                          <td class="text-center amount">200/Kg</td>
+                          <td class="text-center min">10Kg</td>
                           <td class="text-center">From Sikkim</td>
                           <td class="text-center">
-                            <button class="btn btn-success overlay-add-btn text-capitalize" >Add to list</button>
+                            <button class="btn btn-success overlay-add-btn text-capitalize"onclick = "vanish(this)" >Add to list</button>
 
                             <div class="input-group add-to-list">
                               <div class="input-group-prepend">
@@ -325,14 +325,104 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  repeat the next table contents here
+                  <div class="table-wrapper">
+                    <table class="table table-striped table-bordered table-hover">
+                      <thead>
+                        <tr>
+                          <th class="text-center">#</th>
+                          <th class="text-center">Product Name</th>
+
+                          <th class="text-center">Price(₹)</th>
+                          <th class="text-center">Min/Qy</th>
+                          <th class="text-center">Notes</th>
+                          <th class="text-center">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center" scope="row">1</td>
+                          <td class="text-center">Orange</td>
+                          <td class="text-center amount">150/Kg</td>
+                          <td class="text-center min">10Kg</td>
+                          <td class="text-center">From Sikkim</td>
+                          <td class="">
+                            <button class="btn btn-success overlay-add-btn text-capitalize"onclick = "vanish(this)" >Add to list</button>
+                            <div class="input-group add-to-list">
+                              <div class="input-group-prepend">
+                                <button class="btn btn-outline-secondary" type="button"
+                                  onclick="decrement(this)">-</button>
+                              </div>
+                              <input type="text" class="form-control counter-content w-100 text-center" value="0" placeholder=""
+                                aria-label="" aria-describedby="basic-addon1" />
+
+                              <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button"
+                                  onclick="increment(this)">+</button>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-center" scope="row">2</td>
+                          <td class="text-center">Kiwi</td>
+                          <td class="text-center amount">600/Kg</td>
+                          <td class="text-center min">10Kg</td>
+                          <td class="text-center">From Sikkim</td>
+                          <td class="text-center">
+                            <button class="btn btn-success overlay-add-btn text-capitalize" onclick = "vanish(this)">Add to list</button>
+
+                            <div class="input-group add-to-list">
+                              <div class="input-group-prepend">
+                                <button class="btn btn-outline-secondary" type="button"
+                                  onclick="decrement(this)">-</button>
+                              </div>
+                              <input type="text" class="form-control counter-content w-100 text-center"  value="0" placeholder=""
+                                aria-label="" aria-describedby="basic-addon1" disabled />
+
+                              <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button"
+                                  onclick="increment(this)">+</button>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-center" scope="row">3</td>
+                          <td class="text-center">Grapes</td>
+                          <td class="text-center amount">200/Kg</td>
+                          <td class="text-center min">10Kg</td>
+                          <td class="text-center">From Sikkim</td>
+                          <td class="text-center">
+                            <button class="btn btn-success overlay-add-btn text-capitalize"onclick = "vanish(this)" >Add to list</button>
+
+                            <div class="input-group add-to-list">
+                              <div class="input-group-prepend">
+                                <button class="btn btn-outline-secondary" type="button"
+                                  onclick="decrement(this)">-</button>
+                              </div>
+                              <input type="text" class="form-control counter-content w-100 text-center" value="0" placeholder=""
+                                aria-label="" aria-describedby="basic-addon1" />
+
+                              <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button"
+                                  onclick="increment(this)">+</button>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
                 </div>
               </div>
 
               <div class="swiper-pagination mt-5 text-success"></div>
             </div>
 
-
+<div class="card-footer text-center text-capitalize">
+  total cost : ₹<span class = "text-success font-weight-bolder" id = "display-amount">0</span>
+</div>
           </div>
         </div>
       </div>
@@ -364,7 +454,7 @@
                   <div class="swiper-slide">Slide 9</div>
                 </div>
 
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination mt-5 pt-5"></div>
               </div>
             </div>
           </div>

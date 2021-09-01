@@ -1,5 +1,5 @@
       var swiper = new Swiper(".swiper-video", {
-        effect:'coverflow',
+        
         slidesPerView: 3,
         spaceBetween: 30,
       
@@ -7,7 +7,7 @@
           el: ".swiper-pagination",
           clickable: true,
         },
-      autoplay:true,
+      
       centeredSlides:true,
       breakpoints:{
         350:{
