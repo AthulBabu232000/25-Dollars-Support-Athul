@@ -7,3 +7,44 @@ packet
 
 gm
 ml
+
+
+  <address class="mx-auto">
+                    <i class="fas fa-home p-0 mb-2"></i><br>
+                    West Street <br>
+                    Erode <br>
+                    Tamil Nadu <br>
+                    638001
+                  </address>
+
+
+                </div>
+                <div class="contacts text-center align-middle mt-0">
+                  <a href="mailto: dpsagartala@gmail.com" class="fas fa-mail-bulk"></a>
+                  <a href="tel:+9198944444" class="fas fa-phone"></a>
+                  <a href="#"><i class="fa fa-facebook"></i></a></div>
+
+
+
+                   <div class="card" id="introduce">
+            <div class="
+                  card-header
+                  bg-success
+                  text-light text-center align-middle text-capitalize
+                ">
+              nailagounder
+            </div>
+            <div class="my-auto row bg-primary mx-auto address">
+
+              <div class="col-lg-2 d-flex justify-content-center align-items-center"><i
+                  class="fas fa-address-book    "></i></div>
+              <div class="col-lg-4 d-flex justify-content-center align-items-center"><span>Erode, TamilNadu</span></div>
+              <div class="col-lg-6  d-flex justify-content-center align-items-center">
+                <div class="contacts">
+                  <a href="mailto: dpsagartala@gmail.com" class="fas fa-mail-bulk"></a>
+                  <a href="tel:+9198944444" class="fas fa-phone"></a>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
