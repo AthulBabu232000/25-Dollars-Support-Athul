@@ -23,7 +23,7 @@
             spaceBetween: 30,
           },
           1024: {
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 30,
           },
       },
@@ -38,7 +38,7 @@
         slidesPerView: "auto",
         spaceBetween: 30,
         freeMode: true,
-        centeredSlides:true,
+        centeredSlides:false,
         breakpoints: {
           350: {
             slidesPerView: 2,
@@ -53,7 +53,7 @@
             spaceBetween: 40,
           },
           1024: {
-            slidesPerView: 4,
+            slidesPerView: 7,
             spaceBetween: 10,
           },
         },

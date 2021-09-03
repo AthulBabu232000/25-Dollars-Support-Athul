@@ -81,12 +81,12 @@ blockquote .desc {
 }
 
 #home .farmerProfilePic {
-  width: 115px;
-  height: 115px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   background-color: var(--success);
   margin: 0 auto;
-  margin-top: -57.5px;
+  margin-top: -75px;
 }
 
 #home .farmerProfilePic img {
@@ -246,7 +246,7 @@ blockquote .desc {
 }
 
 .swiper-video{
-  height:250px;
+  height:500px;
   user-select: none;
 }
 .swiper-video .swiper-slide{
@@ -257,6 +257,7 @@ blockquote .desc {
   background-color:#000;
   padding:0px 10px;
   border-radius:8px;
+  
 }
 .farmer-video-controls .fa:hover{
 
@@ -420,6 +421,22 @@ grid-template-rows:auto auto;
 
  
 }
+.amount-container{
+  display:grid;
+  grid-template-columns: auto auto auto;
+  margin-top:6px;
+}
+.amount-container div{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.btn:active, .btn:focus{
+  outline:none;
+  box-shadow:none;
+}
+
 @media screen and (max-width: 600px) {
   nav ul {
     position: relative;
@@ -452,5 +469,17 @@ grid-template-rows:auto auto;
    .carousel-control-next{
      margin-right:0%;
    }
- 
+ .amount-container{
+   margin-top:15px
+ }
+.amount-display{
+  margin-top:-50px;
+}
+  .amount-product{
+    margin-top:50px;
+    margin-left:-150px;
+  }
+  .amount-submit{
+    margin-top:50px;
+  }
 }
