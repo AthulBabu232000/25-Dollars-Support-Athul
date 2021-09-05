@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    position: relative;
+}
+body,html{
+    scroll-behavior: smooth;
+    overflow-x:hidden;
+}
+body{
+    width:100%;
+    min-height:100vh;
+    perspective: 1px;
+    transform-style:preserve-3d;
+    overflow-x:hidden;
+}
+.container-fluid{
+    width:100%;
+    min-height:100vh;
+    padding:0;
+    background-image:url(./y-so-serious-white.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    overflow:hidden;
+    transform:translateZ(-1px) scale(2);
+    transform-origin:center;
+}
+
+.card-header{
+
+    
+  font-weight:bold;
+  color:var(--success);
+  border-radius:10px;
+  font-size:large;
+}
+
+label{
+  font-weight:bold;
+}
+
+input.mapboxgl-ctrl-geocoder--input{
+  position:absolute;
+  background-color:#fff;
+  top:-183px;
+  left:-100px;
+  padding:5px 10px;
+  height:40px;
+}
+
+
+
+@media screen and (max-width:500px){
+
+  .container-fluid{
+    padding:3px;
+  }
+  .card-header{
+
+    
+    font-weight:bold;
+    color:var(--success);
+    border-radius:10px;
+    font-size:large;
+  }
+  input.mapboxgl-ctrl-geocoder--input{
+    position:absolute;
+    background-color:#fff;
+    top:-183px;
+    left:-100px;
+    padding:5px 10px;
+    height:40px;
+  }
+
+
+  label{
+    font-weight:bold;
+  }
+  /* #map { position: absolute; top: 0; bottom: 0; width: 100%;height:300px } */
+}

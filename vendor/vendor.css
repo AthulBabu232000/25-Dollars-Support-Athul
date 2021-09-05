@@ -1,0 +1,209 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    position: relative;
+}
+body,html{
+    scroll-behavior: smooth;
+    overflow-x:hidden;
+}
+body{
+    width:100%;
+    min-height:100vh;
+}
+.container-fluid{
+    width:100%;
+    min-height:100vh;
+    padding:0;
+    background-image:url(./y-so-serious-white.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    overflow:hidden;
+}
+.card{
+    border:1px solid var(--success);
+}
+.card-img{
+    width:300px;
+}
+.btn:active, .btn:focus{
+    outline:none;
+    box-shadow:none;
+  }
+
+@media screen and (min-width:500px){
+    .slider-button{
+        padding:0px;
+        height:80px;
+        position:fixed;
+        width:95%;
+        margin-bottom:0;
+        z-index:10;
+    }
+    
+    .slider-button .btn img{
+        height:100%;
+        width:100%;
+    }
+    
+    
+    .slider-button .btn{
+        width:60px;
+        height:60px;
+     overflow:hidden;
+     position:fixed;
+     bottom:10px;
+     right:10px;
+     z-index:10;
+     padding:0 !important;
+    
+    }
+    
+    
+    
+    
+    
+    #table-slider{
+        position:absolute;
+        left:-100%;
+        background-color:#fff;
+        transition: all 0.6s;
+        height:100vh;
+        width:100%;
+        z-index:0;
+        padding:10px;
+    
+        
+    
+    }
+    #inner-table-slider{
+        background-color: #fff;
+        min-height:100vh;
+        z-index:0;
+    width:100%;
+    
+    }
+    
+    .outer-initial-row{
+        min-height:100vh;
+        overflow:hidden;
+    }
+    .card-containers{
+        min-height:100vh;
+        padding-top:10px;
+    }
+    #last-column{
+        padding-top:10px;
+    }
+
+    .table-heading{
+        border:1px solid var(--success);
+        color:var(--success);
+        margin-bottom:10px;
+    }
+
+}
+
+
+@media screen and (max-width:500px){
+    .card{
+        border-radius:10px;
+        overflow:hidden;
+        background:transparent;
+    }
+    .card-header{
+        font-size:x-large;
+    }
+
+    .slider-button{
+        padding:4px;
+        height:80px;
+        position:fixed;
+        width:95%;
+        margin-bottom:0;
+        z-index:10;
+    }
+
+    .slider-button .btn img{
+        height:100%;
+        width:100%;
+    }
+
+
+ 
+    .table td, .table th{
+        vertical-align:middle !important;
+        white-space:nowrap;
+        width:1%;
+
+    }
+    
+
+    #table-slider{
+        position:absolute;
+        left:-100%;
+        background-color:#fff;
+        transition: all 0.6s;
+        height:100vh;
+        width:100%;
+        z-index:0;
+        
+
+    }
+    #inner-table-slider{
+        background-color: #fff;
+        min-height:100vh;
+        z-index:0;
+
+
+    }
+    #inner-initial-row{
+        overflow-x:hidden;
+        min-height:100vh;
+    }
+    .outer-initial-row{
+        z-index:0;
+    }
+    .table-heading{
+        border:1px solid var(--success);
+        padding:5px;
+        border-radius:10px;
+        color:var(--success);
+        margin-bottom:5px;
+        font-weight:bolder;
+        margin-top:20px;
+
+    }
+.table-heading:hover{
+    border:1px solid var(--dark);
+    color:var(--light);
+    background-color:var(--success)
+}
+
+
+  .card:hover{
+    box-shadow:none !important;
+  }
+
+  .slider-button .btn{
+    width:60px;
+    height:60px;
+ overflow:hidden;
+ position:fixed;
+ bottom:10px;
+ right:10px;
+ z-index:10;
+ padding:0 !important;
+
+}
+label{
+    font-weight:bold;
+}
+/* #last-column{
+    margin-top:-100px;
+} */
+
+
+}

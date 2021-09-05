@@ -48,3 +48,11 @@ ml
               </div>
             </div>
           </div>
+
+
+
+          here is the access token for mapbox with athul.with.techibaba
+          pk.eyJ1IjoiYXNiOCIsImEiOiJja3Q2NGVvbjUwZXoyMnZwZW5mb3U5MjNnIn0.UYFuxbVRgtQqjz-8oCnBgQ
+
+          toggle button w3schools
+          https://www.w3schools.com/howto/howto_css_switch.asp

@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="vendor.css" />
+    <title>vendor</title>
+  </head>
+
+  <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modelId"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modelTitleId"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-capitalize font-weight-bolder">
+              add product
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <fieldset>
+                <legend></legend>
+                <div class="form-group">
+                  <label for="" class="text-capitalize">product name: </label>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    class="form-control addToTable"
+                    placeholder="eg. Orange"
+                    aria-describedby="helpId"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="" class="text-capitalize"
+                    >product category:
+                  </label>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    class="form-control addToTable"
+                    placeholder="eg. Fruit"
+                    aria-describedby="helpId"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="" class="text-capitalize">product price: </label>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    class="form-control addToTable"
+                    placeholder="eg. 10(in ₹)"
+                    aria-describedby="helpId"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="" class="text-capitalize">per unit</label>
+                  <select
+                    class="form-control addToTable"
+                    name=""
+                    id=""
+                    placeholder="Select a unit"
+                  >
+                    <option value="0">kg</option>
+                    <option value="1">g</option>
+                    <option value="2">L</option>
+                    <option value="3">ml</option>
+                    <option value="4">pieces</option>
+                    <option value="5">packets</option>
+                    <option value="6">dozen</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="" class="text-capitalize"
+                    >product min qty:
+                  </label>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    class="form-control addToTable"
+                    placeholder="Enter number only"
+                    aria-describedby="helpId"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="" class="text-capitalize">product notes: </label>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    class="form-control addToTable"
+                    placeholder="eg. Ripened sweet fruits"
+                    aria-describedby="helpId"
+                  />
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              onclick="createTable()"
+              class="btn btn-success text-capitalize"
+            >
+              Add product
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+
+      <nav class="
+navbar navbar-fixed navbar-expand-sm navbar-light
+bg-light
+shadow-sm
+" id="laravel">
+<a class="navbar-brand px-3" href="#">Laravel</a>
+<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="collapsibleNavId">
+<ul class="navbar-nav px-4">
+<li class="nav-item active">
+  <a class="nav-link" href="#">Login<span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item active">
+  <a class="nav-link" href="#">Register</a>
+</li>
+</ul>
+</div>
+</nav>
+      <div class="slider-button d-flex flex-row-reverse mt-5">
+        <button
+          class="
+            btn btn-outline-warning
+            font-weight-bolder
+            text-dark
+            rounded-circle
+          "
+          onclick="slideItIn()"
+        >
+          <img
+            src="../animat-essential/lightbulb/animat-lightbulb-color.gif"
+            alt=""
+            class="
+              img-fluid img-responsive
+              animate__animated animate__bounceInDown
+              rounded-circle
+              w-100
+            "
+            style="border: 2px solid var(--warning)"
+          />
+        </button>
+      </div>
+      <div class="row outer-initial-row">
+        <div class="col-12 col-lg-10 mx-auto mt-4">
+          <div class="row mx-auto" id="inner-initial-row">
+            <div
+              class="
+                col-12 col-lg-4
+                mx-auto
+                card-containers
+              "
+            >
+              <div class="card border border-success shadow rounded-lg">
+                <div
+                  class="
+                    card-header
+                    text-capitalize
+                    border-dark
+                    text-success
+                    font-weight-bolder
+                  "
+                >
+                  <i class="fas fa-store"></i> Add store
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Add your store so you can add products and sell them
+                  </p>
+                  <button
+                    class="
+                      btn btn-success
+                      rounded
+                      font-weight-bold
+                      animate__animated animate__bounce
+                    "
+                  >
+                    Add Store
+                  </button>
+                </div>
+              </div>
+              <div class="card border border-success shadow rounded-lg mt-4">
+                <div
+                  class="
+                    card-header
+                    text-capitalize
+                    border-dark
+                    text-success
+                    font-weight-bolder
+                  "
+                >
+                  <i class="fab fa-product-hunt"></i> Add products
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Add your store so you can add products and sell them
+                  </p>
+                  <button
+                    class="
+                      btn btn-success
+                      rounded
+                      font-weight-bold
+                      border-info
+                      animate__animated animate__bounce
+                    "
+                    data-toggle="modal"
+                    data-target="#modelId"
+                  >
+                    Add products
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-8" id="last-column">
+              <div id="table-edit">
+                <div class="alert alert-warning warning" role="alert">
+                  <strong>You haven't added any products</strong>
+                </div>
+                <div class="text-center bg-success">
+                  <h4
+                    class="
+                      mx-auto
+                      text-center text-capitalize text-white
+                      py-2
+                      rounded
+                    "
+                  >
+                    Added products
+                  </h4>
+                </div>
+                <div class="table-responsive">
+                  <table class="table table-striped table-hover">
+                    <thead>
+                      <tr>
+                        <th class="text-center middle-align text-capitalize">
+                          product
+                        </th>
+                        <th class="text-center middle-align text-capitalize">
+                          category
+                        </th>
+                        <th class="text-center middle-align text-capitalize">
+                          price
+                        </th>
+                        <th class="text-center middle-align text-capitalize">
+                          unit
+                        </th>
+                        <th class="text-center middle-align text-capitalize">
+                          min/qty
+                        </th>
+                        <th class="text-center middle-align text-capitalize">
+                          notes
+                        </th>
+                        <th class="text-center middle-align text-capitalize">
+                          actions
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody id="table-edit-body"></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12" id="table-slider">
+          <div id="inner-table-slider">
+            <div class="alert alert-warning d-none" role="alert">
+              <h4 class="alert-heading">Add the store and product</h4>
+              <p>The order from customers is visible here</p>
+              <p class="mb-0"></p>
+            </div>
+
+            <div class="table-heading text-left align-middle">
+              <h3 class="text-left text-capitalize my-auto text-center py-3 font-weight-bolder">
+                recent orders
+              </h3>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-striped table-hover table-bordered">
+                <thead>
+                  <tr>
+                    <th
+                      class="
+                        text-center text-capitalize
+                        middle-align
+                        table-success
+                      "
+                    >
+                      order ID
+                    </th>
+                    <th
+                      class="
+                        text-center text-capitalize
+                        middle-align
+                        table-success
+                      "
+                    >
+                      customer name
+                    </th>
+                    <th
+                      class="
+                        text-center text-capitalize
+                        middle-align
+                        table-success
+                      "
+                    >
+                      store name
+                    </th>
+                    <th
+                      class="
+                        text-center text-capitalize
+                        middle-align
+                        table-success
+                      "
+                    >
+                      action
+                    </th>
+                    <th
+                      class="
+                        text-center text-capitalize
+                        middle-align
+                        table-success
+                      "
+                    >
+                      total price
+                    </th>
+                    <th
+                      class="
+                        text-center text-capitalize
+                        middle-align
+                        table-success
+                      "
+                    >
+                      status
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center text-capitalize middle-align">
+                      #ORD-78766
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      abhishek
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      mystore
+                    </td>
+                    <td class="text-center text-capitalize">
+                      <button
+                        class="
+                          btn btn-success
+                          rounded-pill
+                          font-weight-bolder
+                          text-center text-capitalize
+                        "
+                      >
+                        accept</button
+                      ><button
+                        class="
+                          btn btn-danger
+                          rounded-pill
+                          font-weight-bolder
+                          text-center text-capitalize
+                          ml-2
+                        "
+                      >
+                        reject
+                      </button>
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      ₹1000
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      <button
+                        class="
+                          btn-warning
+                          font-weight-bolder
+                          text-center text-capitalize
+                          btn
+                          rounded-pill
+                        "
+                      >
+                        pending...
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center text-capitalize middle-align">
+                      #ORD-78767
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      fernandes
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      Mystore
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      <button
+                        class="
+                          btn btn-info
+                          rounded-pill
+                          font-weight-bolder
+                          text-center text-capitalize
+                        "
+                      >
+                        view details
+                      </button>
+                      <button
+                        class="
+                          btn btn-outline-warning
+                          rounded-pill
+                          font-weight-bolder
+                          text-center text-capitalize
+                          ml-2
+                        "
+                      >
+                        Update status
+                      </button>
+                    </td>
+
+                    <td class="text-center text-capitalize middle-align">
+                      ₹2000
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      <button
+                        class="
+                          btn btn-success
+                          rounded-pill
+                          text-center text-capitalize
+                          font-weight-bolder
+                        "
+                      >
+                        processing...
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="text-center text-capitalize middle-align">
+                      #ORD-78767
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      fernandes
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      Mystore
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      <button
+                        class="
+                          btn btn-info
+                          rounded-pill
+                          font-weight-bolder
+                          text-center text-capitalize
+                        "
+                      >
+                        view details
+                      </button>
+                      <button
+                        class="
+                          btn btn-outline-warning
+                          rounded-pill
+                          font-weight-bolder
+                          text-center text-capitalize
+                          ml-2
+                        "
+                      >
+                        Update status
+                      </button>
+                    </td>
+
+                    <td class="text-center text-capitalize middle-align">
+                      ₹2000
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      <button
+                        class="
+                          btn btn-success
+                          rounded-pill
+                          text-center text-capitalize
+                          font-weight-bolder
+                        "
+                      >
+                        processing...
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="text-center text-capitalize middle-align">
+                      #ORD-78767
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      fernandes
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      Mystore
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      <button
+                        class="
+                          btn btn-info
+                          rounded-pill
+                          font-weight-bolder
+                          text-center text-capitalize
+                        "
+                      >
+                        view details
+                      </button>
+                      <button
+                        class="
+                          btn btn-outline-warning
+                          rounded-pill
+                          font-weight-bolder
+                          text-center text-capitalize
+                          ml-2
+                        "
+                      >
+                        Update status
+                      </button>
+                    </td>
+
+                    <td class="text-center text-capitalize middle-align">
+                      ₹2000
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      <button
+                        class="
+                          btn btn-success
+                          rounded-pill
+                          text-center text-capitalize
+                          font-weight-bolder
+                        "
+                      >
+                        processing...
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="text-center text-capitalize middle-align">
+                      #ORD-78767
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      fernandes
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      Mystore
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      <button
+                        class="
+                          btn btn-info
+                          rounded-pill
+                          font-weight-bolder
+                          text-center text-capitalize
+                        "
+                      >
+                        view details
+                      </button>
+                      <button
+                        class="
+                          btn btn-outline-warning
+                          rounded-pill
+                          font-weight-bolder
+                          text-center text-capitalize
+                          ml-2
+                        "
+                      >
+                        Update status
+                      </button>
+                    </td>
+
+                    <td class="text-center text-capitalize middle-align">
+                      ₹2000
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      <button
+                        class="
+                          btn btn-success
+                          rounded-pill
+                          text-center text-capitalize
+                          font-weight-bolder
+                        "
+                      >
+                        processing...
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="text-center text-capitalize middle-align">
+                      #ORD-78767
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      fernandes
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      Mystore
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      <button
+                        class="
+                          btn btn-info
+                          rounded-pill
+                          font-weight-bolder
+                          text-center text-capitalize
+                        "
+                      >
+                        view details
+                      </button>
+                      <button
+                        class="
+                          btn btn-outline-warning
+                          rounded-pill
+                          font-weight-bolder
+                          text-center text-capitalize
+                          ml-2
+                        "
+                      >
+                        Update status
+                      </button>
+                    </td>
+
+                    <td class="text-center text-capitalize middle-align">
+                      ₹2000
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      <button
+                        class="
+                          btn btn-success
+                          rounded-pill
+                          text-center text-capitalize
+                          font-weight-bolder
+                        "
+                      >
+                        processing...
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="text-center text-capitalize middle-align">
+                      #ORD-78767
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      fernandes
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      Mystore
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      <button
+                        class="
+                          btn btn-info
+                          rounded-pill
+                          font-weight-bolder
+                          text-center text-capitalize
+                        "
+                      >
+                        view details
+                      </button>
+                      <button
+                        class="
+                          btn btn-outline-warning
+                          rounded-pill
+                          font-weight-bolder
+                          text-center text-capitalize
+                          ml-2
+                        "
+                      >
+                        Update status
+                      </button>
+                    </td>
+
+                    <td class="text-center text-capitalize middle-align">
+                      ₹2000
+                    </td>
+                    <td class="text-center text-capitalize middle-align">
+                      <button
+                        class="
+                          btn btn-success
+                          rounded-pill
+                          text-center text-capitalize
+                          font-weight-bolder
+                        "
+                      >
+                        processing...
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="nav.js"></script>
+    <script src="vendor.js"></script>
+  </body>
+</html>
