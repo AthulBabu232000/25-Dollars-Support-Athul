@@ -12,31 +12,52 @@ html {
   /* font-family: 'Merriweather', serif; */
 }
 
-#navigation .navbar-nav {
-  display: grid;
-  grid-template-columns: 15% 65% 20%;
-  place-items: center;
-  
+
+html{
+  height:100%;
+  overflow:hidden;
 }
 
-.search-bar{
-  width:400px !important;
+body{
+  margin:0;
+  padding:0;
+  /* perspective:1px;
+  transform-style:preserve-3d; */
+  overflow-x:hidden;
+  overflow-y:scroll;
 }
 
-.search-btn{
-  right:9px;
-  background-color:#fff;
+#row, .first-section{
+  /* margin-top:100px; */
+  box-sizing:border-box;
+  min-height:100vh;
+   transform-style:inherit;
+   width:100%;
 }
 
-.first-section{
-  margin-top:100px;
+.first-section, .first-section:before{
+  background:50% 50% /cover;
+
 }
-#navigation{
-  position:fixed;
-  width:100%;
-  z-index:100;
+
+.first-section::before{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
   top:0;
+  transform:translateZ(-1px) scale(2);
+  /* background:#fff; */
+  background-image:url(https://images.unsplash.com/photo-1558008749-736d955a1e55?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+  background-size:cover;
+  min-height:100vh;
+  z-index:-1;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
+
+
 .swiper {
   width: 100%;
 }
@@ -46,45 +67,7 @@ html {
   
 }
 
-.inner-container{
-  position:fixed;
-}
 
-.main-container-row{
-  position:absolute;
-  right:0;
-}
-
-.inner-container-wrapper{
-    height:90vh;
-    overflow-y:scroll;
-    width:100%;
-}
-
-.inner-container-wrapper::-webkit-scrollbar {
-  width: 5px;
-}
-
-/* Track */
-.inner-container-wrapper::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-.inner-container-wrapper::-webkit-scrollbar-thumb {
-  background: transparent;
-}
-
-/* Handle on hover */
-.inner-container-wrapper::-webkit-scrollbar-thumb:hover {
-  background: transparent;
-}
-
-.inner-container-wrapper .table{
-  width:100%;
-  padding:0;
-
-}
 
 .swiper-slide .card{
   height:100%;
@@ -113,6 +96,7 @@ html {
 .classic-header{
   padding:15px 0;
   margin-bottom:20px;
+  color:var(--white);
 }
 .classic-header::before{
 content:'';
@@ -123,13 +107,17 @@ width:90%;
 height:3px;
 left:50%;
 transform:translate(-50%);
+
 }
 
-.swiper-button-next{
-
-  margin-right:-300px;
+.start-img-wrapper::after{
+  content:'';
+  position: absolute;
+  height:80%;
+  width:80%;
+  left:50%;
+  transform:translateX(-50%);
+  top:70%;
+  background-color:red;
 }
 
-.swiper-wrapper{
-  background-color:var(--success);
-}
