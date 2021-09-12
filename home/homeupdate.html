@@ -23,14 +23,19 @@
       href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="assets/css/homeupdate.css" />
     <title>Home-Farmers</title>
+ 
   </head>
   <body>
-    <div class="container-fluid p-1 pt-lg-0">
+    <div class="container-fluid p-0 pt-lg-0">
       <!-- navigation bar -->
-      <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+      <nav class="navbar navbar-expand-sm navbar-light " id = "navigation">
         <a class="navbar-brand heading ml-lg-5 px-lg-2" href="#">Navbar</a>
         <button
           class="navbar-toggler"
@@ -170,7 +175,7 @@
 
           <div class="main-heading">
             <h2 class="heading text-center text-capitalize">
-              welcome to <span>world of organics</span>
+              welcome to <span>farmer's portfolio</span>
             </h2>
           </div>
           <div class="body-content main-content mx-auto mt-lg-5 text-center">
@@ -186,53 +191,63 @@
       <!-- uncategorized plants homefoods -->
 
       <div class="row w-100 mx-auto p-0" id="three-category">
-        <div class="card-columns mx-auto">
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="https://orga.wpengine.com/wp-content/uploads/2018/03/img01.jpg"
-              alt=""
-            />
-            <div class="card-body">
-              <h4 class="card-title heading text-capitalize text-right">
-                uncategorized
-              </h4>
-              <p class="card-text text-right body-content">
-                listing: <span class="font-weight-bolder">1000</span>
-              </p>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+
+                <div class="card text-center">
+                  <img class="card-img-top" src="../animat-essential/checkmark/animat-checkmark-color.gif" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title heading text-capitalize">uncategorized</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> <div class="card text-center">
+                <img class="card-img-top" src="./assets/img/plant.png" alt="">
+                <div class="card-body">
+                  <h4 class="card-title heading text-capitalize">plants</h4>
+                </div>
+              </div></div>
+              <div class="swiper-slide"> <div class="card text-center">
+                <img class="card-img-top" src="./assets/img/food.png" alt="">
+                <div class="card-body">
+                  <h4 class="card-title heading text-capitalize">home food</h4>
+                </div>
+              </div></div>
+              <div class="swiper-slide"> <div class="card text-center">
+                <img class="card-img-top" src="../animat-essential/checkmark/animat-checkmark-color.gif" alt="">
+                <div class="card-body">
+                  <h4 class="card-title heading text-capitalize">uncategorized</h4>
+                </div>
+              </div></div>
+              <div class="swiper-slide"> <div class="card text-center">
+                <img class="card-img-top" src="../animat-essential/checkmark/animat-checkmark-color.gif" alt="">
+                <div class="card-body">
+                  <h4 class="card-title heading text-capitalize">uncategorized</h4>
+                </div>
+              </div></div>
+              <div class="swiper-slide"> <div class="card text-center">
+                <img class="card-img-top" src="../animat-essential/checkmark/animat-checkmark-color.gif" alt="">
+                <div class="card-body">
+                  <h4 class="card-title heading text-capitalize">uncategorized</h4>
+                </div>
+              </div></div>
+              <div class="swiper-slide"> <div class="card text-center">
+                <img class="card-img-top" src="../animat-essential/checkmark/animat-checkmark-color.gif" alt="">
+                <div class="card-body">
+                  <h4 class="card-title heading text-capitalize">uncategorized</h4>
+                </div>
+              </div></div>
+              <div class="swiper-slide"> <div class="card text-center">
+                <img class="card-img-top" src="../animat-essential/checkmark/animat-checkmark-color.gif" alt="">
+                <div class="card-body">
+                  <h4 class="card-title heading text-capitalize">uncategorized</h4>
+                </div>
+              </div></div>
+              <div class="swiper-slide">Slide 9</div>
             </div>
           </div>
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="https://orga.wpengine.com/wp-content/uploads/2018/03/img01.jpg"
-              alt=""
-            />
-            <div class="card-body">
-              <h4 class="card-title heading text-capitalize text-right">
-                plants
-              </h4>
-              <p class="card-text text-right body-content">
-                listing: <span class="font-weight-bolder">1000</span>
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="https://orga.wpengine.com/wp-content/uploads/2018/03/img01.jpg"
-              alt=""
-            />
-            <div class="card-body">
-              <h4 class="card-title heading text-capitalize text-right">
-                home foods
-              </h4>
-              <p class="card-text text-right body-content">
-                listing: <span class="font-weight-bolder">1000</span>
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
 
       <!--thinking about some animations -->
@@ -463,5 +478,15 @@
     <script>
       AOS.init();
     </script>
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper -->
+     <script>
+       var swiper = new Swiper(".mySwiper", {
+         slidesPerView: 6,
+         spaceBetween: 30,
+     
+       });
+     </script>
   </body>
 </html>

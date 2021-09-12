@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
+:root {
+  --theme: #a4de02;
+  --heading-clr: #76ba1b;
+  --icon-clr: #4c9a2a;
+  --theme2: #fff;
+  --bg-minor: #acdf87;
+  --bgminor2:#1E5631;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.heading {
+  /* font-family: 'Alfa Slab One', cursive; */
+  font-family: "Bree Serif", serif;
+}
+
+.body-content {
+  font-family: "Open Sans", sans-serif;
+}
+
+
+.heading-underline::before{
+
+    position:absolute;
+    content:'';
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    background-color:var(--bg-minor);
+    height:4px;
+    width:80%;
+}
+.subtitle{
+    color:var(--bg-minor);
+    font-size:smaller;
+}
+/* navigation menu beginning */
+
+
+
+.navbar {
+    /* background-color: rgba(0, 0, 0, 0.2) !important; */
+    /* background-color:rgb(118, 186, 27, 1) !important; */
+    background-color:var(--theme);
+    color:#000;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    padding-bottom:15px;
+    padding-top:15px;
+  }
+  
+  .navbar-dark {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    color: #ffffff !important;
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+  .navbar a{
+      transition:all 0.4s ease;
+  }
+  .navbar a:hover{
+      color:var(--theme) !important;
+      font-weight:bolder;
+      border-radius:10px;
+      background-color:#000 !important;
+
+  }
+  .navbar-collapse, .navbar-nav, .nav-item {
+    color: inherit !important;
+  }
+/* navigation menu ending */
+
+/* carousel beginning */
+#firsthomeid{
+    width:100%;
+    min-height:80vh;
+    margin-bottom:39px;
+}
+
+#firsthomeid .carousel-item{
+    background-color:var(--bg-minor)
+}
+#firsthomeid .carousel-item img{
+
+    display:block;
+    width:100%;
+    height:80vh;
+opacity:0.6;
+    /* float:right; */
+    transform:scaleY(1.6)
+}
+#firsthomeid .carousel-item .carousel-caption {
+    position:absolute;
+    left:0%;
+    top:50%;
+    transform:translate(0%, -50%);
+    /* background-color:black; */
+  height:100%;
+  width:45%;
+  border-radius:15px;
+  overflow:hidden;
+  z-index:0;
+  display:grid;
+  justify-content:center;
+  align-items:center;
+}
+#firsthomeid .carousel-item .carousel-caption p{
+  padding:0px 40px;
+
+}
+#firsthomeid .carousel-item .carousel-caption button{
+    background-color:var(--theme);
+  
+  }
+#firsthomeid .carousel-item .carousel-caption:before{
+    position:absolute;
+    content:'';
+    height:100%;
+    width:100%;
+    background:url();
+    background-color:var(--bgminor2);
+    top:0;
+    left:0;
+    opacity:0.7;
+}
+#firsthomeid .carousel-item .carousel-caption .heading{
+
+
+    font-size:100px;
+    margin-top:60px;
+}
+/* some random content */
+
+#just-content{
+    width:100%;
+    min-height:50vh;
+
+}
+.main-heading .heading{
+    font-size:48px;
+}
+.main-heading span{
+    color:var(--heading-clr);
+}
+
+#just-content .main-content{
+    width:70%;
+    font-size:large;
+
+}
+
+
+/* end of some random content */
+
+/* three-category */
+
+#three-category {
+  width: 100%;
+  min-height: 60vh;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  background-color: var(--bg-minor);
+  padding: 0px 10px;
+}
+
+#three-category .swiper{
+    padding:20px;
+}
+
+#three-category .swiper-slide{
+    background-color:var(--theme2);
+    height:80%;
+transition:all 0.6s ease;
+
+    border-radius: 15px;
+    background: #acdf87;
+    box-shadow:  5px 5px 12px #8bb56d,
+                 -5px -5px 12px #cdffa1;
+}
+
+#three-category .swiper-slide .card{
+    border:2px solid #000;
+    background: #acdf87;
+    border-radius:inherit;
+}
+#three-category .swiper-slide .card .heading{
+    font-size:larger;
+}
+
+
+
+#three-category .swiper-slide:hover{
+   box-shadow:none;
+}
+
+#three-category .card-columns .card .card-img-top{
+    height:100%;
+}
+
+/* connect farmers */
+
+#connect-farmers {
+  width: 100%;
+  min-width: 100vh;
+}
+
+#connect-farmers .card-columns {
+  width: 100%;
+}
+
+#connect-farmers .card-columns .card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.6s ease;
+}
+
+#connect-farmers .card-columns .card:hover {
+  background-color: var(--heading-clr);
+}
+
+#connect-farmers .card-columns .card:hover .card-title,
+#connect-farmers .card-columns .card:hover .fas,
+#connect-farmers .card-columns .card:hover .card-text {
+  color: var(--theme2);
+}
+
+#connect-farmers .card-img-wrapper {
+  overflow: hidden;
+  transition: all 0.6s ease;
+}
+
+#connect-farmers .card-img-wrapper img {
+  height: 30%;
+  transition: all 0.6s ease-in;
+}
+#connect-farmers .card-img-wrapper img:hover {
+  transform: scale(1.1);
+}
+
+#connect-farmers .card-title {
+  color: var(--heading-clr);
+  margin-top: 60px;
+}
+
+#connect-farmers .card-text {
+  font-size: 14px;
+}
+
+#connect-farmers .card-body:before {
+  content: "";
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  background: url(https://thumbs.dreamstime.com/b/indian-rural-farmer-19791729.jpg);
+  background-size: cover;
+  background-position: center;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--theme2);
+  border-radius: 50%;
+}
+
+#connect-farmers .fas {
+  color: var(--icon-clr);
+}
+
+/* end of connect farmers */
+
+
+/* location of farmers */
+
+#location-map{
+    width:100%;
+    min-height:50vh;
+}
+
+#location-map #map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  /* footer */
+
+  footer{
+      margin-top:100px;
+  }
+
+  footer #inner-footer{
+      background-color:var(--theme);
+  }
+
+  footer #inner-footer a{
+
+    text-decoration:none;
+    color:#000;
+  }
+
+  footer #inner-footer a:hover{
+      cursor: pointer;
+  }
+
+  footer{
+      background-color:#000;
+      opacity:0.9;
+  }
+
+  footer .heading{
+      color:var(--theme);
+  }
+
+  footer .deep-purple{
+      background-color:var(--theme);
+  }
+
+  footer .footer-copyright{
+      color:var(--theme2);
+      border-top: 1px solid var(--bg-minor);
+}
+
+  footer a{
+      text-decoration:none;
+      color:var(--theme2);
+  }
+
+  footer .contactus{
+      color:var(--theme2);
+  }
