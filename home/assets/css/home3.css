@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
+:root {
+  --theme: #a4de02;
+  --heading-clr: #76ba1b;
+  --icon-clr: #4c9a2a;
+  --theme2: #fff;
+  --bg-minor: #acdf87;
+  --bgminor2:#1E5631;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.heading {
+  /* font-family: 'Alfa Slab One', cursive; */
+  font-family: "Bree Serif", serif;
+}
+
+.body-content {
+  font-family: "Open Sans", sans-serif;
+}
+
+
+.heading-underline::before{
+
+    position:absolute;
+    content:'';
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    background-color:var(--bg-minor);
+    height:4px;
+    width:80%;
+}
+.subtitle{
+    color:var(--bg-minor);
+    font-size:smaller;
+}
+/* navigation menu beginning */
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0) !important;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    padding-bottom:20px;
+    padding-top:20px;
+  }
+  
+  .navbar-dark {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    color: #ffffff !important;
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+  .navbar a{
+      transition:all 0.4s ease;
+  }
+  .navbar a:hover{
+      background-color:var(--theme);
+      font-weight:bolder;
+      border-radius:10px;
+
+  }
+  .navbar-collapse, .navbar-nav, .nav-item {
+    color: inherit !important;
+  }
+/* navigation menu ending */
+
+/* carousel beginning */
+
+/* some random content */
+
+#just-content{
+    width:100%;
+    min-height:50vh;
+
+}
+.main-heading .heading{
+    font-size:48px;
+}
+.main-heading span{
+    color:var(--heading-clr);
+}
+
+#just-content .main-content{
+    width:70%;
+    font-size:large;
+
+}
+
+
+/* end of some random content */
+
+/* three-category */
+
+#three-category {
+  width: 100%;
+  min-height: 60vh;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  /* background-color: var(--bg-minor); */
+  padding: 0px 10px;
+}
+
+#three-category .swiper{
+    padding:20px;
+    overflow:hidden;
+}
+
+#three-category .swiper-slide{
+    background-color:var(--theme2);
+    height:100%;
+transition:all 0.6s ease;
+
+    border-radius: 15px;
+    background:#f2f3f2;
+    height:150px;   
+    
+ 
+}
+
+#three-category .icons{
+    
+}
+
+
+/* connect farmers */
+
+#connect-farmers {
+  width: 100%;
+  min-width: 100vh;
+}
+
+#connect-farmers .card-columns {
+  width: 100%;
+  display:grid;
+  grid-template-columns:auto auto auto auto;
+}
+
+#connect-farmers .card-columns .card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.6s ease;
+}
+
+#connect-farmers .card-columns .card:hover {
+  background-color: var(--heading-clr);
+}
+
+#connect-farmers .card-columns .card:hover .card-title,
+#connect-farmers .card-columns .card:hover .fas,
+#connect-farmers .card-columns .card:hover .card-text {
+  color: var(--theme2);
+}
+
+#connect-farmers .card-img-wrapper {
+  overflow: hidden;
+  transition: all 0.6s ease;
+}
+
+#connect-farmers .card-img-wrapper img {
+  height: 30%;
+  transition: all 0.6s ease-in;
+}
+#connect-farmers .card-img-wrapper img:hover {
+  transform: scale(1.1);
+}
+
+#connect-farmers .card-title {
+  color: var(--heading-clr);
+  margin-top: 60px;
+}
+
+#connect-farmers .card-text {
+  font-size: 14px;
+}
+
+#connect-farmers .card-body:before {
+  content: "";
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  background: url(https://thumbs.dreamstime.com/b/indian-rural-farmer-19791729.jpg);
+  background-size: cover;
+  background-position: center;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--theme2);
+  border-radius: 50%;
+}
+
+#connect-farmers .fas {
+  color: var(--icon-clr);
+}
+
+/* end of connect farmers */
+
+
+/* location of farmers */
+
+#location-map{
+    width:100%;
+    min-height:50vh;
+    margin-bottom:50px;
+}
+
+#location-map #map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  /* footer */
+
+  footer{
+      margin-top:100px;
+  }
+
+  footer #inner-footer{
+      background-color:var(--theme);
+  }
+
+  footer #inner-footer a{
+
+    text-decoration:none;
+    color:#000;
+  }
+
+  footer #inner-footer a:hover{
+      cursor: pointer;
+  }
+
+  footer{
+      background-color:#000;
+      opacity:0.9;
+  }
+
+  footer .heading{
+      color:var(--theme);
+  }
+
+  footer .deep-purple{
+      background-color:var(--theme);
+  }
+
+  footer .footer-copyright{
+      color:var(--theme2);
+      border-top: 1px solid var(--bg-minor);
+}
+
+  footer a{
+      text-decoration:none;
+      color:var(--theme2);
+  }
+
+  footer .contactus{
+      color:var(--theme2);
+  }

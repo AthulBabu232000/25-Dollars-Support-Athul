@@ -1,4 +1,3 @@
-
 mapboxgl.accessToken = 'pk.eyJ1IjoiYXNidXBzaWxvbiIsImEiOiJja3Nwb2IyYTkwNHh5MnF0ZnU3NWgyZjN5In0.kBkF4jQdtSHD1SSqjoaAgQ';
 const coordinates = document.getElementById('coordinates');
 const map = new mapboxgl.Map({
@@ -19,6 +18,21 @@ draggable: true
 function coordinateFeature(lng, lat) {
     return {
     center: [lng, lat],
+    "geojson-marker": {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-77.0323, 38.9131]
+            },
+            "properties": {
+                "title": "Mapbox DC",
+                "marker-symbol": "monument"
+            }
+        }
+    },
+    
     geometry: {
     type: 'Point',
     coordinates: [lng, lat]
@@ -26,8 +40,16 @@ function coordinateFeature(lng, lat) {
     place_name: 'Lat: ' + lat + ' Lng: ' + lng,
     place_type: ['coordinate'],
     properties: {},
-    type: 'Feature'
+    type: 'Feature',
+    context:[
+        {
+            id: "country.19678805456372290",
+            text:"United States"
+        }
+    ]
+          
     };
+
     }
 
 function onDragEnd() {
@@ -36,27 +58,24 @@ coordinates.style.display = 'block';
 coordinates.innerHTML = `Longitude: ${lngLat.lng}<br />Latitude: ${lngLat.lat}`;
 let coord1 = lngLat.lng;
 let coord2 = lngLat.lat;
-let final = coordinateFeature(coord1, coord2)
-console.log(final)
-console.log(final.place_name);
-console.log(final.place_type);
-var geocoder = new MapboxGeocoder({
-    accessToken: mapboxgl.accessToken
-});
-geocoder.mapboxClient
-  .geocodeReverse({
-    latitude: coord1, 
-    longitude: coord2
-  }, function(err, res) {
-    console.log(err, res)
-  });
-console.log(geocoder)
-// geocoder.on('result', function(ev) {
-//     map.getSource('single-point').setData(ev.result.geometry);
-//     console.log('ev',ev)
-//     built_address = ev.result.place_name
 
-// });
+
 }
+
+map.addControl(
+    new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken,
+        mapboxgl: mapboxgl,
+    })
+  
+);
+
+
  
 marker.on('dragend', onDragEnd);
+
+
+
+
+
+

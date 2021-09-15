@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
+:root {
+  --theme: #a4de02;
+  --heading-clr: #76ba1b;
+  --icon-clr: #4c9a2a;
+  --theme2: #fff;
+  --bg-minor: #acdf87;
+  --bgminor2:#1E5631;
+  --btn-outline-success: #76ba1b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.heading {
+  /* font-family: 'Alfa Slab One', cursive; */
+  font-family: "Bree Serif", serif;
+}
+
+.body-content {
+  font-family: "Open Sans", sans-serif;
+}
+/* showing content id */
+
+#showing-content .card{
+  background-color:rgb(247, 247, 247);
+}
+
+#showing-content .card .card-img-top{
+
+  height:130px;
+  width:auto;
+  display:block;
+  margin:0 auto;
+  transition:all 0.4s ease;
+
+}
+
+#showing-content .card:hover .card-img-top{
+
+  transform:translateY(-5px);
+}
+
+#showing-content .card:hover{
+  border:1px solid var(--theme);
+}
+
+#showing-content .card .btn{
+  font-weight: bolder;
+}
+.btn:active, .btn:visited{
+  box-shadow:none;
+}
+.btn-focus{
+  box-shadow:none;
+}
+/* background color for range-slider */
+
+.range-slider::-webkit-slider-thumb {
+  background: gray !important;
+}
+
+.range-slider::-moz-range-thumb {
+  background: gray !important;
+}
+
+.range-slider::-ms-thumb {
+  background: gray !important;
+}
+  
+@media screen and (max-width:600px){
+  #showing-content .card{
+    margin-top:20px;
+    border-radius:10px;
+  }
+  #showing-content .row{
+    margin-top:0px !important;
+  }
+
+  #showing-content {
+    padding:0 40px;
+  }
+
+  #selection-content{
+    margin-bottom:20px;
+  }
+}
