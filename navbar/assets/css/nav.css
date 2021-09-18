@@ -1,0 +1,47 @@
+
+:root {
+  --theme: #a4de02;
+  --heading-clr: #76ba1b;
+  --icon-clr: #4c9a2a;
+  --theme2: #fff;
+  --bg-minor: #acdf87;
+  --bgminor2:#1E5631;
+  --btn-outline-success: #76ba1b;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0) !important;
+    background-color:var(--success) !important;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    padding-top:10px;
+    padding-bottom:10px;
+
+  }
+  
+  .navbar-dark {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    background-color:var(--theme) !important;
+    color: #ffffff !important;
+    padding-top:10px;
+  
+    padding-bottom:10px;
+  }
+  .navbar a{
+      transition:all 0.4s ease;
+  }
+  .navbar a:hover{
+      background-color:var(--theme);
+      /* font-weight:bolder; */
+      border-radius:10px;
+
+  }
+
+  .navbar .navbar-brand:hover{
+    color:black !important;
+  }
+  .navbar-collapse, .navbar-nav, .nav-item {
+    color: inherit !important;
+    color:white !important;
+  }

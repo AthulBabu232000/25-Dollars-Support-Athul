@@ -18,35 +18,42 @@
 
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
 
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/portfolio.css" />
+  <link rel="stylesheet" href="../navbar/assets/css/nav.css">
   <title>Unicorn Fruits</title>
 </head>
 
 <body>
   <div class="container-fluid">
-    <nav class="
-          navbar navbar-fixed navbar-expand-sm navbar-light
-          bg-light
-          shadow-sm
-        " id="laravel">
-      <a class="navbar-brand px-3" href="#">Laravel</a>
-      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
-        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <a class="navbar-brand heading ml-lg-5 px-lg-2 text-light" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav px-4">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Login<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Register</a>
-          </li>
-        </ul>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link body-content active" href="#"
+            >Home <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-item nav-link body-content" href="#"
+            >Register/Login</a
+          >
+          <a class="nav-item nav-link body-content" href="#">Near me</a>
+          <a class="nav-item nav-link body-content" href="#">Category</a>
+        </div>
       </div>
     </nav>
 
-    <div class="row mx-auto mt-3 mb-0  mb-md-2" id="home">
+
+    <div class="row mx-auto mt-1  mb-0 mb-md-2" id="home">
       <div class="col-lg-9 mx-auto">
         <div class="card-deck mx-auto p-0">
           <div class="card shadow">
@@ -163,7 +170,7 @@
                   <i class="fa fa-arrow-circle-left category-display-pre" aria-hidden="true"></i>
                 </div>
 
-                <div class="swiper mySwiper">
+                <div class="swiper mySwiper-collection">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <button class="btn btn-outline-success">
@@ -749,27 +756,11 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./assets/js/swipers.js"></script>
 
-  <script>
-    $(function () {
-      var navbar = $(".navbar");
 
-      $(window).scroll(function () {
-        if ($(window).scrollTop() <= 40) {
-          navbar.removeClass("navbar-scroll");
-          console.log(document.getElementsByClassName("navbar")[0]);
-          document
-            .getElementsByClassName("navbar")[0]
-            .setAttribute("id", "laravel");
-        } else {
-          $("nav#laravel").removeAttr("id");
-          navbar.addClass("navbar-scroll");
-        }
-      });
-    });
-  </script>
 
   <script src="./assets/js/map.js"></script>
   <script src="./assets/js/script.js"></script>
+  <script src = "../navbar/assets/js/nav.js"></script>
 </body>
 
 </html>

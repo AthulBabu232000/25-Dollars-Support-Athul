@@ -1,31 +1,34 @@
+/* no code for navigation is included here */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
     position: relative;
 }
-body,html{
-    scroll-behavior: smooth;
-    overflow-x:hidden;
+html,
+body {
+  scroll-behavior: smooth;
 }
-body{
-    width:100%;
-    min-height:100vh;
-    perspective: 1px;
-    transform-style:preserve-3d;
-    overflow-x:hidden;
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  
 }
+
 .container-fluid{
     width:100%;
-    min-height:100vh;
+ height:100%;
     padding:0;
-    background-image:url(./y-so-serious-white.png);
+    /* background-image:url(./y-so-serious-white.png);
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center;
     overflow:hidden;
     transform:translateZ(-1px) scale(2);
-    transform-origin:center;
+    transform-origin:center; */
 }
 
 .card-header{
